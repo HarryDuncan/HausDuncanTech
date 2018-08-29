@@ -1,0 +1,32 @@
+.item{
+	font-size: 1em;
+	margin: 5%;
+	width: 40vw;
+	a{
+	text-decoration: none;
+	color: black;
+	}
+
+}
+#menuButton{
+	float: right;
+	width: 40vw;
+	background-color: transparent;
+	color: white;
+	border: 0px solid black;
+	height: 12vh;
+
+	mat-icon{
+		font-size: 56px !important;
+		height: 56px !important;
+		width: 56px !important;
+	}
+}
+	img{
+		position: absolute;
+		left:4%;
+		top: 1.5%;
+		height: 10vh;
+		
+	}
+

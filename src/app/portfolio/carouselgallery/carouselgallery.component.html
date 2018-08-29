@@ -1,0 +1,8 @@
+<div id="wrapper">
+<img id="phone" src="assets/images/unleash.png"/>
+	<div class="screen" *ngFor="let item of Items; let i = index" >
+		<img [ngClass]="{'show' : i == Index}" src="{{ item}}" />
+	</div>
+	<div id="backScreen">
+	</div>
+</div>

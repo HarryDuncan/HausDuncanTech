@@ -1,0 +1,9 @@
+<div  class="section" (click)="reload()" (mouseenter)="enter($event)" (mouseleave)="exit($event)">
+			<a  routerLink="/Projects/{{ portfolio.id }}">
+			<img class="sectionImage" src="assets/images/Portfolio/{{portfolio.folder}}/Home.jpg"/>
+			<div id="cover" [ngClass]="{'show' : hovered == true}">
+			<h1 [ngClass]="{'title' : hovered == true}">{{portfolio.tagline}}</h1>
+			</div>
+			</a>
+		
+</div>

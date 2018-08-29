@@ -1,0 +1,32 @@
+<nav class="responsive">
+  <div [ngClass]="{'scrolling' : scrolled == true}"></div>
+  <a  routerLink="">
+  <img src='/assets/images/HausDuncanTech.svg'/>
+  </a>
+  <ul>
+    <li>
+      <a routerLink="About" [class.active]="currentUrl == '/About'">
+        <i class="navLink">About</i>
+      </a>
+    </li>
+      <li>
+      <a routerLink="TechStack" [class.active]="currentUrl == '/TechStack'">
+        <i class="navLink">Tech Stack</i>
+      </a>
+    </li>
+      <li>
+      <a routerLink="Portfolio" [class.active]="currentUrl == '/Portfolio'">
+        <i class="navLink">Portfolio</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="Contact" [class.active]="currentUrl == '/Contact'">
+        <i class="navLink">Contact</i>
+      </a>
+    </li>
+  </ul>
+
+</nav>
+
+
+  

@@ -1,0 +1,100 @@
+@import '../../styles.scss';
+
+#HomeDiv{
+	height: 110%;
+	width: 100vw;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background: radial-gradient($modTurqLight 60%,$modTurq,$modTurqDark);
+
+
+	h1{
+		position: absolute;
+		right: 5%;
+		top: 20%;
+		font-weight: 500;
+		z-index: 1;
+		
+	}
+	.section{
+		position: absolute;
+		background:white ;
+		box-shadow: 0 50px 90px 0 rgba(0, 0, 0, 0.4), 0 60px 50px 0 rgba(0, 0, 0, 0.19);
+		height: 80%;
+		width: 45vw;
+		top: 15vh;
+		left: 5vw;
+
+		h3{
+		margin: 0 auto;
+		margin-left: 10%;
+		margin-top: 2%;
+		font-size: 2em;
+		alignment: center;
+		}
+
+		p{ 
+		margin:10%;
+		font-size: 1.2em;
+		align: center;
+		}
+		form{
+		height: 100%;
+		width: 80%;
+
+		input{
+		display: flex;
+		flex-direction: column;
+		margin-top: 3%;
+		width: 100%;
+		margin-left: 10%;
+		clear:both;
+		min-height: 6%;
+		border-radius: 3px;
+		}
+		textarea{
+			display: flex;
+			flex-direction: column;
+			margin-top: 3%;
+			width: 100%;
+			margin-left: 10%;
+			clear:both;
+			height: 15%;
+			border-radius: 3px;
+			font-family: arial;
+		}
+		.margin{
+		margin-left: 10%;
+		}
+
+	button{
+		height: 12%;
+		width: 30%;
+		margin: 0 auto;
+		margin-top: 2%;
+		font-size: 1em;
+		font-weight: 800;
+		background: transparent;
+		border: 2px solid black;
+		margin-left: 45%;
+
+		a{
+		text-decoration: none;
+		color: black;
+		}
+		
+	}
+
+	button:hover{
+		background : $gray-900;
+		color: white;
+		a{
+		color: white;
+		}
+	}
+
+	}
+
+	}
+}

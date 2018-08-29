@@ -1,0 +1,27 @@
+<div id="HomeDiv">
+	<div id="bg">
+		<img id="bgImg" src="assets/images/Portfolio/{{item.folder}}/Home.jpg"/>
+		<h1 id="MainTitle">{{item.tagline }}</h1>
+	</div>
+	<div id="ViewItem">
+		<div id="blurbSection">
+			<h1 >{{item.name }}</h1>
+			<div class="row">
+				<div id="sectionLeft">
+					<p>{{item.blurb}}</p>
+				</div>
+				<img src="assets/images/Portfolio/{{item.folder}}/1.jpg"/>
+			</div>
+			<div class="row">
+				<img src="assets/images/Portfolio/{{item.folder}}/2.jpg"/>
+				<div id="sectionRight">
+					<p>{{item.content}}</p>
+				</div>
+				
+			</div>	
+		<div>
+		<div id="galleryGrid">
+			<app-portfolio-card   (click)="reloadSection(portfolio.ID)"  class="grid" *ngFor="let portfolio of portfolio$" [portfolio]="portfolio"></app-portfolio-card>
+		</div>
+	</div>
+</div>

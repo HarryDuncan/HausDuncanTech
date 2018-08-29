@@ -1,0 +1,107 @@
+@import '../../styles.scss';
+
+#HomeDiv{
+	position:absolute;
+	top: 0;
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	background: radial-gradient($modYellowLight 40%, $modYellow, $modYellowDark);
+	left: 0;
+	padding: 0;
+
+	h1{
+	position: absolute;
+	right: 5%;
+	top: 10%;
+	font-size: 5em;
+	color: white;
+	font-weight: 500;
+	
+	}
+	h3{
+	position: absolute;
+	right: 5%;
+	top: 15%;
+	font-size: 1.5em;
+	color: white;
+	font-weight: 500;
+
+	}
+
+	#bulb{
+		max-height: 700px;
+	}
+
+	#techStackGrid{
+	position: relative;
+	min-height:200vh;
+	height: auto;
+	column-count: 4;
+    column-gap: 1em;
+    background-color: $gray-200;
+    width: 100vw;
+    padding-top: 5%;
+    margin-top: 5%;
+    padding-left: 0.5%;
+ 
+
+    .tabTop{
+    	position: absolute;
+    	top: -4%;
+    	width: 130%;
+    	
+    	width:100vw;
+    	height: 30vh;
+    	border-radius: 35% 35% 0 0;
+    	border-top:15px solid $gray-900;
+    	background-color: $gray-200;
+    	margin-left:-1%;
+
+    }
+	}
+
+}
+
+@media only screen and (max-width: 1100px){
+	#HomeDiv{
+	min-height: 300vh;
+	height: auto;
+	
+
+		#techStackGrid{
+			top: 46vh;
+			column-count: 2;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 800px){
+	#HomeDiv{
+	height: auto;
+
+	h1{
+	position: absolute;
+	top: 15vh;
+	left: 10%;
+	width: 100%;
+	font-size: 4em;
+	}
+	h3{
+	display: none;
+	}
+
+	#techStackGrid{
+		width: 100vw;
+		column-count: 1;
+		border:none;
+		top: 40vh;
+		height:auto;
+	}
+
+
+	}
+	
+
+}

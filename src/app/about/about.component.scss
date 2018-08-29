@@ -1,0 +1,98 @@
+@import '../../styles.scss';
+
+
+#HomeDiv{
+	background : radial-gradient($modRedLight 50%, $modRed, $modRedDark);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 200vh;
+
+	h1{
+	right: 5%;
+	top: 20%;
+	}
+	img{
+	height: 100vh;
+	}
+	.section{
+		position: absolute;
+		top: 10vh;
+		box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.4), 0 40px 90px 0 rgba(0, 0, 0, 0.3);
+		display: flex;
+		background: white;
+		height: 80vh;
+		width: 80vw;
+		height: auto;
+		margin: 0 auto;
+		color: black;
+		flex-direction: column;
+		z-index: 0;
+		position: relative;
+
+
+		#imageSection{
+			position: relative;
+			width: 60%;
+			background: black;
+			height: auto;
+			overflow: none;
+			img{
+			width: 100%;
+			height: auto;
+			}
+			}
+
+		#content{
+			width: 40%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			h3{
+				font-size: 3.5em;
+				font-family: gilroy-bold;
+				margin: 3%;
+				
+				color: black;
+				}
+			p{
+				margin: 3%;
+				margin-top:30%;
+				font-size: 1.2em
+			}
+			}
+		
+		}
+}
+@media only screen and (max-width: 1100px){
+	#HomeDiv{
+
+			.section{
+
+				height: 60vh;
+			#content{
+				clear:both;
+				background: white;
+				width: 100%;
+			height: 
+				h3{
+				font-size: 3.5em;
+				margin:0;
+				color: black;
+				}
+			p{
+				margin: 3%;
+				margin-top:10%;
+				font-size: 1em
+			}
+			}
+			#imageSection{
+				position: absolute;
+				width: 100%;
+				top: 100%;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<div id="HomeDiv">
+	<img id="bulb" src="assets/images/lightbulb.png"/>
+	<h1>Utilizing Technology</h1>
+	<h3> Leveraging the best of full stack technologies... <br> see more below </h3>
+	<div id="techStackGrid">
+		<div class="tabTop"></div>
+		<app-info-card-component 
+		class="col" *ngFor="let tech of tech$" 
+		[tech]="tech"
+	 ></app-info-card-component>
+	</div>
+</div>

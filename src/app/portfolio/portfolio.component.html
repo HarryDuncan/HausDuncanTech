@@ -1,0 +1,10 @@
+<div id="HomeDiv">
+<app-carouselgallery id="phoneCarousel"></app-carouselgallery>
+<h1>A Repertiore</h1>
+<h2>From Online Stores to Portfolios. Have a Look at Some Past Projects</h2>
+	
+	<div id="portfolioGrid">
+		<div class="tabTop"></div>
+		<app-portfolio-card *ngFor="let portfolio of portfolio$" [portfolio]="portfolio"></app-portfolio-card>
+	</div>
+</div>

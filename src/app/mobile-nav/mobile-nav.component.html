@@ -1,0 +1,13 @@
+<mat-menu  id="dropDown" #appMenu="matMenu">
+    <button class="item" mat-menu-item><a routerLink="About">About</a></button>
+	<button class="item" mat-menu-item><a routerLink="TechStack">Tech Stack</a></button>
+	 <button class="item" mat-menu-item><a routerLink="Portfolio">Portfolio</a></button>
+	<button class="item" mat-menu-item><a routerLink="Contact">Contact</a></button>
+	</mat-menu>
+
+	<a routerLink="" >
+	 <img src='assets/images/HausDuncanTech.svg'/>
+	</a>
+      <button id="menuButton" mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>menu</mat-icon>
+      </button>
