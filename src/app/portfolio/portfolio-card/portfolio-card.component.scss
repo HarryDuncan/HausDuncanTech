@@ -4,10 +4,10 @@
 				background: white;
 				height: 60vh;
 				width: 45vw;
+				
 			
 				margin-bottom: 3%;
 				color: black;
-				
 				z-index: 0;
 				position: relative;
 
@@ -15,9 +15,8 @@
 					position: relative;
 					flex:1;
 					flex-shrink: 0;
-				    min-width: 100%;
-					height: auto;
-					max-height:100%;
+				    width: 100%;
+					height: 100%;
 					
 					cursor: pointer;
 					z-index: 0;

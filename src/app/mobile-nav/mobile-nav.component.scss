@@ -1,7 +1,33 @@
-.item{
-	font-size: 1em;
-	margin: 5%;
+	.item{
+	font-size: 1.8em;
+	
 	width: 40vw;
+	a{
+	text-decoration: none;
+	color: black;
+	}
+	}
+#menuButton{
+	float: right;
+	width: 20vw;
+	background-color: transparent;
+	color: white;
+	border: 0px solid black;
+	height: 12vh;
+
+	mat-icon{
+		font-size: 106px !important;
+		height: 106px !important;
+		width: 86px !important;
+	}
+}
+
+@Media only screen and (max-width: 500px){
+
+		.item{
+	font-size: 1em;
+	
+	width: auto;
 	a{
 	text-decoration: none;
 	color: black;
@@ -10,7 +36,7 @@
 }
 #menuButton{
 	float: right;
-	width: 40vw;
+	width: 30vw;
 	background-color: transparent;
 	color: white;
 	border: 0px solid black;
@@ -25,8 +51,11 @@
 	img{
 		position: absolute;
 		left:4%;
+		float: right;
 		top: 1.5%;
 		height: 10vh;
 		
 	}
 
+	
+}

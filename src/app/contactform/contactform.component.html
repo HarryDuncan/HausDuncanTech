@@ -1,9 +1,9 @@
 <div>
-	<div *ngIf="notSubmit" id="contact" class="section">
+	<div *ngIf="!submitted" id="contact" class="section">
 		<h3>Contact</h3>
 		<form >
 		
-			<input required ngModel type="text" #Name="ngModel" name="Name" (change)="log(Name)" placeholder="Name"/>
+			<input required ngModel type="text" #Name="ngModel" name="Name"  placeholder="Name"/>
 			<div class="alert alert-danger margin" *ngIf="Name.touched && !Name.valid" > A name is required</div>
 			
 			<input ngModel #Phone="ngModel" type="text" name="Phone" placeholder="Phone" />
@@ -16,7 +16,7 @@
 			<button (click)="submit(Name.value, Phone.value, Email.value, Message.value)">Get In Touch</button>
 		</form>
 	</div>
-	<div *ngIf="!notSubmit" id="sent" class="section">
+	<div *ngIf="submitted" id="sent" class="section">
 		<h2> Message Sent</h2>
 		<h2> Thanks for reaching out
 			I will be in touch shortly.</h2>

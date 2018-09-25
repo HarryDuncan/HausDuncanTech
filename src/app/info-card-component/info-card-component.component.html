@@ -1,12 +1,11 @@
 
-<div  class="section" [ngClass]="{'flip' : hovered == true}"(mouseenter)="enter($event)"
-		(mouseleave)="exit($event)" >
+<div  class="section"  (click)="turn()" [ngClass]="{'flip' : hovered == true}">
 	<div class="front">
 		<img class="sectionImage" src={{tech.imageURL}}/>
 		
 		<p class="subtitle">{{tech.subtitle}}</p>
 	</div>
-	<div class="back">
+	<div class="back"  >
 	<h3 class="title">{{tech.name}}</h3>
 	<p>{{tech.blurb}}</p>
 	</div>

@@ -29,12 +29,15 @@ currentUrl: string;
 
   
 
-  constructor(private route : Router) {
-    route.events.subscribe((_: NavigationEnd ) => this.currentUrl = _.url)
+  constructor(private route :Router) {
+  route.events.subscribe((val) => {
+    this.currentUrl = this.route.url
+    });
   }
 
   ngOnInit() {
     window.scrollTo(0, 0);
+
     }
 
 }

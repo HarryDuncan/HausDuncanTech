@@ -4,9 +4,8 @@ import { NgModule, EventEmitter, HostListener, Component, Directive, Output } fr
 import {MatMenuModule} from '@angular/material/menu';
 import { MatIconModule } from "@angular/material/icon"; 
 import { AppRoutingModule } from './app-routing.module';
-import {FormsModule} from '@angular/forms' ;
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -27,6 +26,7 @@ import { CarouselgalleryComponent } from './portfolio/carouselgallery/carouselga
 import { CarouselHomeComponent } from './home/carousel-home/carousel-home.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ContactformComponent } from './contactform/contactform.component';
+import { DownArrowComponent } from './down-arrow/down-arrow.component';
 
 
 
@@ -50,6 +50,7 @@ import { ContactformComponent } from './contactform/contactform.component';
     CarouselHomeComponent,
     MobileNavComponent,
     ContactformComponent,
+    DownArrowComponent,
 
   ],
   imports: [
@@ -61,6 +62,7 @@ import { ContactformComponent } from './contactform/contactform.component';
     MatMenuModule,
     MatIconModule,
     FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

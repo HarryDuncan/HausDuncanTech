@@ -68,13 +68,16 @@ h1{
 		color: white;
 		font-size: 5em;
 		font-weight: 500;
+		font-family: arial;
 		font-family: gilroy-bold;
+
 	}
 
 h2{
 	font-size: 1.5em;
 	color: white;
 	font-weight: 900;
+	font-family: arial;
 	font-family: gilroy-light;
 }
 h3{
@@ -84,6 +87,7 @@ h3{
 
 p{
 	color:black;
+	font-family: arial;
 	font-family: gilroy-light;
 }
 button{
@@ -100,8 +104,8 @@ ul{
 	}
 	
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }
+html, body { height: 100%; font-family: Arial}
+body { margin: 0; font-family: Arial, Helvetica, sans-serif !important; }
 
 @media only screen and (max-width : 1100px){
 	
@@ -113,7 +117,7 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 @media only screen and (max-width : 900px){
 	
 	h1{
-	font-size: 4em;
+	font-size: 3em;
 	}
 
 	h2{

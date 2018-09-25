@@ -30,7 +30,7 @@ export class CarouselgalleryComponent implements OnInit {
    ngAfterContentInit(){
 
  	interval(4000).subscribe(x => this.changeIndex());
- 	console.log(this.Index)
+ 	
   }
  
 }

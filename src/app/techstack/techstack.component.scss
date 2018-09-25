@@ -5,7 +5,6 @@
 	top: 0;
 	width: 100vw;
 	min-height: 100vh;
-	height: auto;
 	background: radial-gradient($modYellowLight 40%, $modYellow, $modYellowDark);
 	left: 0;
 	padding: 0;
@@ -13,7 +12,7 @@
 	h1{
 	position: absolute;
 	right: 5%;
-	top: 10%;
+	top: 15vh;
 	font-size: 5em;
 	color: white;
 	font-weight: 500;
@@ -22,7 +21,7 @@
 	h3{
 	position: absolute;
 	right: 5%;
-	top: 15%;
+	top: 35vh;
 	font-size: 1.5em;
 	color: white;
 	font-weight: 500;
@@ -34,15 +33,15 @@
 	}
 
 	#techStackGrid{
-	position: relative;
+	position: absolute;
+	top: 100vh;
 	min-height:200vh;
 	height: auto;
 	column-count: 4;
     column-gap: 1em;
     background-color: $gray-200;
     width: 100vw;
-    padding-top: 5%;
-    margin-top: 5%;
+    padding-top: 10%;
     padding-left: 0.5%;
  
 

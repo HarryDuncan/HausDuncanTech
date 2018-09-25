@@ -30,11 +30,9 @@ export class InfoCardComponentComponent implements OnInit {
 	  }
   }
 
-  enter(event){
-  this.hovered = true;
-  }
-   exit(event){
-  this.hovered = false;
-  }
 
+  turn(){
+    this.hovered = !this.hovered;
+  }
+  
 }
