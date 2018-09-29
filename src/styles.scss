@@ -53,6 +53,7 @@ $modTurqDark : #027e87 !default;
 body{
 	overflow-x: hidden;
 	height: auto;
+	font-family: Arial;
 }
 
 #container{
@@ -60,8 +61,52 @@ body{
 	grid-template-columns: 70px auto;
 	height: 100%;
 	font-family: arial;
+
+	#arrow{
+	height: 7vh;
+	position: absolute;
+	z-index: 1;
+	top: 80vh;
+	left: 50vw;
+	animation-timing-function: linear;
+	cursor: pointer;
+	opacity: 0.5;
+
+	animation: down-arrow-ready 900ms 1 both;
+	-webkit-animation: down-arrow-ready 900ms 1 both;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+	@keyframes down-arrow-ready{
+	0%{
+	transform : scale(0.8);
+	transform : translateY(10px);
+	}
+	100%{
+	transform : scale(1.2);
+	transform: translateY(-10px);
+	}
+	}
+
+
+#arrow:hover{
+	animation: arrow-hover 200ms 1 forwards;
+	-webkit-animation: arrow-hover 200ms 1 forwards;
+}
+@keyframes arrow-hover{
+	0%{
+
+	}
+	100%{
+	transform: scale(1.4);
+	opacity: 1;
+	}
+}
 	
 }
+
+
 
 h1{
 		position: absolute;
@@ -104,17 +149,17 @@ ul{
 	}
 	
 }
-html, body { height: 100%; font-family: Arial}
+html, body { height: 100%; font-family: Arial; overflow-x: hidden;}
 body { margin: 0; font-family: Arial, Helvetica, sans-serif !important; }
 
 @media only screen and (max-width : 1100px){
-	
+
 	h1{
 	font-size: 5em;
 	}
 
 }
-@media only screen and (max-width : 900px){
+@media only screen and (max-width : 600px){
 	
 	h1{
 	font-size: 3em;

@@ -69,7 +69,7 @@
 	
 
 		#techStackGrid{
-			top: 46vh;
+			top: 100vh;
 			column-count: 2;
 		}
 	}
@@ -80,12 +80,11 @@
 	#HomeDiv{
 	height: auto;
 
+	#bulb{
+		height: 80vh;
+	}
 	h1{
-	position: absolute;
-	top: 15vh;
-	left: 10%;
-	width: 100%;
-	font-size: 4em;
+	font-size: 2em;
 	}
 	h3{
 	display: none;
@@ -95,7 +94,7 @@
 		width: 100vw;
 		column-count: 1;
 		border:none;
-		top: 40vh;
+		top: 100vh;
 		height:auto;
 	}
 

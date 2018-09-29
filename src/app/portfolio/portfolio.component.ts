@@ -30,4 +30,8 @@ export class PortfolioComponent implements OnInit , OnDestroy{
   this.data.returnPortfolio(this.portfolio$);
   }
 
+    scrollDown($element) : void {
+    
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

@@ -1,10 +1,10 @@
 <div id="HomeDiv">
 <app-carouselgallery id="phoneCarousel"></app-carouselgallery>
-<app-down-arrow></app-down-arrow>
+<img id="arrow" (click)="scrollDown(target)" src="assets/icons/downArrow.png"/>
 <h1>A Repertiore</h1>
 <h2>From Online Stores to Portfolios. Have a Look at Some Past Projects</h2>
 
-	<div id="portfolioGrid">
+	<div id="portfolioGrid" #target>
 		
 		<app-portfolio-card *ngFor="let portfolio of portfolio$" [portfolio]="portfolio"></app-portfolio-card>
 	</div>

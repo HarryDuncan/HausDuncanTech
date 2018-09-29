@@ -64,7 +64,7 @@
 	#HomeDiv{
 		h1{
 		font-size: 3em;
-		top: 8%;
+		top: 15vh;
 		}
 		#portfolioGrid{
 		width: 100vw;
@@ -74,10 +74,11 @@
 		column-gap:1em;
 		padding: 1%;
 
-		.tabTop{
-		margin-left:-1%;
-			
 		}
-		}
+		#phoneCarousel{
+		width: 20vw;
+
+	}
 	}	
+
 }

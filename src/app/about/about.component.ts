@@ -13,4 +13,8 @@ export class AboutComponent implements OnInit {
   window.scrollTo(0, 0);
   }
 
+  scrollDown($element): void{
+  
+  	$element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+  }
 }

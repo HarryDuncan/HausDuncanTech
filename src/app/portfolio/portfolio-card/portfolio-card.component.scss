@@ -90,13 +90,26 @@
 	}
 }
 
-
 @media only screen and (max-width: 1100px){
 	
 	.section{
-			width: 100%;
+			width: 90%;
 			height: auto;
 			background: transparent;
+			margin: 0 auto;
+			margin-top: 10%;
+			margin-bottom: 10%;
+			}
+		}
+@media only screen and (max-width: 900px){
+	
+	.section{
+			width: 90%;
+			height: auto;
+			background: transparent;
+			margin: 0;
+			margin-top: 10%;
+			margin-bottom: 10%;
 
 			.sectionImage{
 					position: relative;

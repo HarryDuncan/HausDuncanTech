@@ -26,7 +26,7 @@ import { CarouselgalleryComponent } from './portfolio/carouselgallery/carouselga
 import { CarouselHomeComponent } from './home/carousel-home/carousel-home.component';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ContactformComponent } from './contactform/contactform.component';
-import { DownArrowComponent } from './down-arrow/down-arrow.component';
+
 
 
 
@@ -50,7 +50,7 @@ import { DownArrowComponent } from './down-arrow/down-arrow.component';
     CarouselHomeComponent,
     MobileNavComponent,
     ContactformComponent,
-    DownArrowComponent,
+    
 
   ],
   imports: [

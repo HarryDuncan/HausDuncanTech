@@ -68,9 +68,15 @@
 }
 @media only screen and (max-width: 1100px){
 	#HomeDiv{
-
+		overflow-x: hidden;
+		img{
+		height: 90vh;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		}
 			.section{
-
+				top: 100vh;
 				height: 60vh;
 			#content{
 				clear:both;

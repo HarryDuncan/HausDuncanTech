@@ -22,6 +22,7 @@ export class PortfolioItemComponent implements OnInit{
   }
 
   ngOnInit() {
+  window.scroll({top: 0, behavior:  'smooth'});
    this.data.Items.subscribe(portfolio => this.portfolio$ = portfolio)
    console.log(this.portfolio$);
     if(this.portfolio$.length === 0){
@@ -33,7 +34,7 @@ export class PortfolioItemComponent implements OnInit{
       this.item = this.portfolio$[this.id - 1]
       console.log(this.portfolio$);
     
-   window.scroll({top: 0, behavior:  'smooth'});
+   
   }
    reloadSection(newID) {
    this.item = this.portfolio$[newID - 1]

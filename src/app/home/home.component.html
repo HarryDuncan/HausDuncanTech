@@ -4,8 +4,8 @@
 	<img src="assets/images/Robot.png" />
 	<h1>Pixel Perfect Software</h1>
 	<h2>Where Design, Artistry and Functionality Intersect</h2>
-	<app-down-arrow></app-down-arrow>
-		<div id="techStack" class="section">
+	<img id="arrow" (click)="scrollDown(target)" src="assets/icons/downArrow.png"/>
+		<div id="techStack" #target class="section">
 			<h3>Fullstack Utilization of Current Tech Trends</h3>
 			<p> From server to screen only the latest and most relevant technologies are used to create robust and scaleable websites and web applications that deliver high performance at a low cost.</p>
 			<a routerLink="TechStack" >View Tech Stack </a>
